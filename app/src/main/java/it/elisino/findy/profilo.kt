@@ -72,6 +72,7 @@ class profilo : Fragment() {
                     Log.d("MESSAGGIO:", "DocumentSnapshot data: ${document.data}")
                     nomeUtenteProfilo.setText(document.getString("nome"))
                     testoDescrizione.setText(document.getString("descrizione"))
+                    testoTelefono.setText(document.getString("telefono"))
                     val vettoreProvince = document.get("province") as List<Boolean>
                     val vettoreProfessioni = document.get("professioni") as List<Boolean>
 
