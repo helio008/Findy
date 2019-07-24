@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "812939740537",
+    "firebase_url": "https://findy-c48e7.firebaseio.com",
+    "project_id": "findy-c48e7",
+    "storage_bucket": "findy-c48e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812939740537:android:46bd8f51aca9d412",
+        "android_client_info": {
+          "package_name": "it.elisino.findy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812939740537-4d69c4qfeb2paqgdidt7mc44vqpg9o3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFS1Lb3NTQ-J_hT5JLOgIlR1DTfLUgXa4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812939740537-4d69c4qfeb2paqgdidt7mc44vqpg9o3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

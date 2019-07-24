@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".registrazione"
+                                                   android:background="@color/colorPrimary">
+
+    <Button
+            android:text="SIGNUP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupButton"
+            android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp"
+            android:paddingBottom="10dp" android:background="@drawable/rounded_corner_text_view"
+            android:textColor="@color/colorPrimaryDark" android:textStyle="bold"
+            android:layout_marginBottom="184dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.498"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/emailEditTextReg"
+            android:hint="example@findy.it"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp" android:paddingBottom="10dp"
+            android:paddingLeft="15dp" android:textSize="24sp" android:textAllCaps="true"
+            android:background="@drawable/rounded_corner_text_view"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toTopOf="@+id/textView"
+            android:layout_marginBottom="15dp"/>
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwordEditTextReg"
+            android:hint="******"
+            android:textSize="24sp" android:background="@drawable/rounded_corner_text_view" android:paddingLeft="15dp"
+            android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintBottom_toTopOf="@+id/textView3" android:layout_marginBottom="15dp"
+    />
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwordEditTextReg2"
+            android:hint="******"
+            android:textSize="24sp" android:background="@drawable/rounded_corner_text_view" android:paddingLeft="15dp"
+            android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintBottom_toTopOf="@+id/signupButton" android:layout_marginBottom="35dp"/>
+    <TextView
+            android:text="Scegli una password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textStyle="bold" android:textColor="#B0FFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/passwordEditTextReg" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/passwordEditTextReg"/>
+    <TextView
+            android:text="Riscrivi la password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textStyle="bold" android:textColor="#B0FFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/passwordEditTextReg2" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/passwordEditTextReg2"/>
+    <TextView
+            android:text="Inserisci la tua e-mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" app:layout_constraintStart_toStartOf="@+id/emailEditTextReg"
+            android:textStyle="bold" android:textColor="#B0FFFFFF"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/emailEditTextReg"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

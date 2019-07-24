@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/homePage">
+
+    <fragment android:id="@+id/homePage" android:name="it.elisino.findy.homePage" android:label="fragment_home_page"
+              tools:layout="@layout/fragment_home_page">
+        <action android:id="@+id/action_homePage_to_sceltaWorker" app:destination="@id/sceltaWorker"
+                app:enterAnim="@anim/nav_default_pop_exit_anim" app:exitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action android:id="@+id/action_homePage_to_ricerca" app:destination="@id/ricerca"/>
+    </fragment>
+    <fragment android:id="@+id/profilo" android:name="it.elisino.findy.profilo" android:label="fragment_profilo"
+              tools:layout="@layout/fragment_profilo">
+        <action android:id="@+id/action_profilo_to_login" app:destination="@id/login"/>
+        <action android:id="@+id/action_profilo_to_modificaDati" app:destination="@id/modificaDati"/>
+    </fragment>
+    <fragment android:id="@+id/sceltaWorker" android:name="it.elisino.findy.sceltaWorker"
+              android:label="fragment_scelta_worker" tools:layout="@layout/fragment_scelta_worker">
+        <action android:id="@+id/action_sceltaWorker_to_registrazione" app:destination="@id/registrazione"/>
+        <action android:id="@+id/action_sceltaWorker_to_login" app:destination="@id/login"
+                app:enterAnim="@anim/nav_default_pop_enter_anim" app:exitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action android:id="@+id/action_sceltaWorker_to_profilo" app:destination="@id/profilo"/>
+    </fragment>
+    <fragment android:id="@+id/ricerca" android:name="it.elisino.findy.ricerca" android:label="fragment_ricerca"
+              tools:layout="@layout/fragment_ricerca"/>
+    <fragment android:id="@+id/registrazione" android:name="it.elisino.findy.registrazione"
+              android:label="fragment_registrazione" tools:layout="@layout/fragment_registrazione">
+        <action android:id="@+id/action_registrazione_to_modificaDati" app:destination="@id/modificaDati"/>
+    </fragment>
+    <fragment android:id="@+id/login" android:name="it.elisino.findy.login" android:label="fragment_login"
+              tools:layout="@layout/fragment_login">
+        <action android:id="@+id/action_login_to_profilo" app:destination="@id/profilo" app:launchSingleTop="false"
+                app:enterAnim="@anim/nav_default_pop_enter_anim" app:exitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment android:id="@+id/modificaDati" android:name="it.elisino.findy.modificaDati"
+              android:label="fragment_modifica_dati" tools:layout="@layout/fragment_modifica_dati">
+        <action android:id="@+id/action_modificaDati_to_profilo" app:destination="@id/profilo"/>
+    </fragment>
+</navigation>
