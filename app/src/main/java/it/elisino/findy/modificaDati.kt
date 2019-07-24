@@ -50,6 +50,7 @@ class modificaDati : Fragment() {
                     nomeEditText.setText(document.getString("nome"))
                     descrizioneEditText.setText(document.getString("descrizione"))
                     fotoEditText.setText(document.getString("foto"))
+                    telefonoEditText.setText(document.getString("telefono"))
                     val vettoreProvince = document.get("province") as List<Boolean>
                     val vettoreProfessioni = document.get("professioni") as List<Boolean>
 
@@ -105,6 +106,7 @@ class modificaDati : Fragment() {
                         "nome" to nomeEditText.text.toString(),
                         "descrizione" to descrizioneEditText.text.toString(),
                         "foto" to fotoEditText.text.toString(),
+                        "telefono" to telefonoEditText.text.toString(),
                         "province" to arrayListOf(checkBoxAvellino.isChecked, checkBoxBenevento.isChecked, checkBoxCaserta.isChecked, checkBoxNapoli.isChecked, checkBoxNapoli.isChecked),
                         "professioni" to arrayListOf(checkBoxCameriere.isChecked, checkBoxBarman.isChecked, checkBoxMaitre.isChecked, checkBoxCuoco.isChecked)
                     )
